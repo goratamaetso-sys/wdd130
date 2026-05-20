@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color: darkblue;
     --secondary-color: #eee;
@@ -42,6 +48,8 @@ main img {
     border: 1px solid var(--border-color);
     padding: 2px;
     box-shadow: 0 0 30px var(--shadow-color);
+    float: right;
+    margin: 0 0 1rem 1rem;
 }
 
 p {
@@ -50,19 +58,21 @@ p {
 }
 
 aside {
-    width: var(--aside-width);
-    margin: var(--aside-margin);
-    border: 1px solid rgb(0 0 0 / 0.2);
-    /* 1️⃣ */
-    padding: var(--aside-padding);
-    background-color: var(--secondary-color);
-    color: var(--text-color);
+    width: 20em;
     text-align: center;
+    position: relative;
 }
 
 aside img {
     width: 200px;
     height: auto;
+
+}
+
+aside h2 {
+    position: absolute;
+    top: 30px;
+    left: 85px;
 }
 
 footer {
@@ -70,4 +80,13 @@ footer {
     padding: var(--footer-padding);
     border-top: 1px solid var(--border-color);
     text-align: center;
+}
+
+/*class selectors*/
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, .1);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
 }
