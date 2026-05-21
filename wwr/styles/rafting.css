@@ -1,0 +1,124 @@
+:root {
+    --primary-color: #055a05;
+    /* forest green */
+    --secondary-color: #f4a261;
+    /* warm sand */
+    --accent1-color: #264653;
+    /* dark slate blue */
+    --accent2-color: #e9c46a;
+    /* light golden yellow */
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.hero {
+    position: relative;
+    width: 870px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.85;
+    background-color: var(--accent1-color);
+    color: #fff;
+    /* white text – make sure there is enough contrast with the background-color */
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    height: auto;
+}
+
+.hero article p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(115, 127, 215, 0.6);
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+}
+
+section h2 {
+    background-color: #ccc;
+    color: #160466;
+    padding: 10px;
+    display: block;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: var(--base-padding);
+    border-top: 1px solid var(--accent1-color);
+}
+
+footer p {
+    margin-bottom: var(--base-margin);
+}
+
+nav a img {
+    width: 30px;
+    height: 30px;
+}
