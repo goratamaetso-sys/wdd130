@@ -18,8 +18,8 @@ head {
 
     --nav-padding: 10px;
     --link-padding: 0.5rem;
-    --main-max-width: 840px;
-    --img-width: 120px;
+    --main-max-width: 1100px;
+    --img-width: 165px;
     --aside-width: 20rem;
     --aside-margin: 1rem;
     --aside-padding: 1rem;
@@ -29,11 +29,13 @@ head {
 
 .grid {
     display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 2rem;
     align-items: center;
 }
 
 body {
-    background-color: var(--secondary-color);
+    background-color: #ebe2b6;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--text-color);
@@ -69,6 +71,7 @@ nav a:hover {
 
 main {
     max-width: var(--main-max-width);
+    line-height: 1.6;
     grid-column: 2/3;
     margin: 0 auto;
 }
@@ -89,8 +92,8 @@ main img {
     margin: 1rem 0 1rem 1rem;
 }
 
-p {
-
+main p {
+    margin-top: 1rem;
     padding: 0.5rem;
 }
 
@@ -103,7 +106,6 @@ p {
 }
 
 aside {
-    width: var(--aside-width);
     position: relative;
     grid-column: 1/2;
     grid-row: 1/2;
@@ -129,7 +131,6 @@ footer {
 }
 
 header,
-grid,
 footer {
     max-width: 840px;
     margin: 0 auto;
