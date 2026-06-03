@@ -16,12 +16,14 @@
     --max-width: 840px;
 }
 
+/* universal layout*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*body layout*/
 body {
     font-family: var(--body-font);
     background-color: var(--primary);
@@ -38,6 +40,7 @@ footer {
     margin: 0 auto;
 }
 
+/*header layout*/
 header {
     display: grid;
     grid-template-columns: 180px 1fr;
