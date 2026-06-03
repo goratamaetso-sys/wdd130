@@ -46,7 +46,7 @@ button {
 
 .box {
     margin: 1rem;
-    border: 1px solid rdg(0 0 0 / 10%);
+    border: 1px solid rgb(0 0 0 / 10%);
     padding: 1rem;
 }
 
