@@ -8,12 +8,15 @@
     --text-primary: #1A0E0A;
     --text-light: #ffffff;
 
-    --primary-transparent: rgba(243, 233, 220, 0.95) --border-color: #8A6A55;
+    --border-color: #8A6A55;
     --border-light: #CBB7A7;
 
     --heading-font: Arial, Helvetica, sans-serif;
     --body-font: Arial, Helvetica, sans-serif;
     --max-width: 840px;
+
+    --primary-transparent: rgba(243, 233, 220, 0.95);
+
 }
 
 /* universal layout*/
@@ -295,7 +298,7 @@ section h2 {
 .contact-form button {
     padding: 12px;
     background: var(--accent-primary);
-    color: var(--text-primary);
+    color: var(--text-light);
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     border: none;
