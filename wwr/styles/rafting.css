@@ -258,6 +258,7 @@ section h2 {
 }
 
 .company-info {
+
     text-align: center;
 }
 
@@ -268,6 +269,17 @@ section h2 {
 .company-info p {
     font-size: 1.1rem;
     line-height: 1.8;
+}
+
+.company-info a {
+    color: var(--text-primary);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.company-info a:hover {
+    color: var(--accent-primary);
+    text-decoration: underline;
 }
 
 .company-info a:hover {
@@ -297,7 +309,7 @@ section h2 {
 
 .contact-form button {
     padding: 12px;
-    background: var(--border-color);
+    background: var(--accent-secondary);
     color: var(--text-light);
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
