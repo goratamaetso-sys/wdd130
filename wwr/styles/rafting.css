@@ -297,7 +297,7 @@ section h2 {
 
 .contact-form button {
     padding: 12px;
-    background: var(--accent-primary);
+    background: var(--border-color);
     color: var(--text-light);
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -309,7 +309,7 @@ section h2 {
 }
 
 .contact-form button:hover {
-    background: var(--accent-secondary);
+    background: var(--accent-primary);
     color: var(--text-light);
 }
 
