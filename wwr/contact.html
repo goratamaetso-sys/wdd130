@@ -34,7 +34,7 @@
                 <a href="mailto:info@wanderlustrafcomp.com">info@wanderlustrafcomp.com</a>
             </p>
         </section>
-        <section class="contact-layout">
+        <div class="contact-layout">
             <div class="map">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114605.04298139391!2d27.96367453906251!3d-26.15085199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950d6b1689b351%3A0x3b86514e5cf523cf!2sBespoke%20by%20Barrow%2C%20Oxford%20%26%20Glenhove!5e0!3m2!1sen!2sza!4v1780515166790!5m2!1sen!2sza"
@@ -58,11 +58,14 @@
                 <fieldset>
                     <legend>Message Purpose</legend>
 
-                    <label><input type="radio" name="purpose" value="general"> General
-                        Inquiry</label><br>
-                    <label><input type="radio" name="purpose" value="reservation"> Reservation
+                    <label for="purpose-general"><input type="radio" id="purpose-general"
+                          name="purpose" value="general">General Inquiry</label><br>
+
+                    <label for="purpose-reservation"><input type="radio" id="purpose-reservation"
+                          value="reservation"> Reservation
                         Question</label><br>
-                    <label><input type="radio" name="purpose" value="suggestion"> Website
+                    <label for="purpose-suggestion"><input type="radio" id="purpose-suggestion"
+                          name="purpose" value="suggestion"> Website
                         Suggestion</label>
                 </fieldset>
 
@@ -74,7 +77,7 @@
                 </div>
 
 
-                <label class="newsletter">
+                <label for="subscribe" class="newsletter">
                     <input type="checkbox" name="subscribe">
                     Please subscribe me to the monthly newsletter
                 </label>
@@ -84,7 +87,7 @@
 
             </form>
 
-        </section>
+        </div>
         <section class="profiles">
             <h2>We Are Here to Serve You</h2>
             <div class="employee-container">
