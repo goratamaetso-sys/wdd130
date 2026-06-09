@@ -146,17 +146,6 @@ h2 {
     font-size: 1rem;
 }
 
-/*section,
-.contact-layout {
-    background-color: var(--secondary);
-    border: 2px solid var(--border-color);
-}
-
-section {
-    padding: 30px;
-    margin-top: 20px;
-}*/
-
 section {
     background-color: var(--secondary);
     padding: 30px;
@@ -398,4 +387,170 @@ footer p {
 
 .socialmedia a img:hover {
     transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 100vw;
+    height: 500px;
+    margin-left: calc(50% - 50vw);
+    max-width: none;
+    overflow: hidden;
+    border: none;
+}
+
+.hero-section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    z-index: 0;
+}
+
+.hero-section-text {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: auto;
+    max-width: 80%;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: var(--accent-secondary);
+    background: rgba(252, 244, 228, 0.818);
+    font-size: 3rem;
+    font-weight: 700;
+    z-index: 10;
+}
+
+/* Newsletter */
+.newsletter {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--secondary);
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+/* Call to Action */
+.cta {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--secondary);
+    color: var(--accent-secondary);
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--accent-primary);
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Grid Layout */
+.offerings .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.offerings {
+    background-color: var(--primary);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.offerings img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+.offerings h3 {
+    color: var(--accent-secondary);
+    margin: 15px 10px 10px;
+    font-size: 1.3rem;
+}
+
+.offerings p {
+    padding: 0 15px 20px;
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+.trips-hero {
+    text-align: center;
+    padding: 60px 30px;
+}
+
+.trip-cta {
+    text-align: center;
+}
+
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.trip-card {
+    background-color: var(--primary);
+    border: 2px solid var(--border-light);
+    text-align: center;
+    overflow: hidden;
+}
+
+.trip-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.trip-card h3 {
+    margin: 15px 0;
+    color: var(--accent-secondary);
+}
+
+.trip-card p {
+    padding: 0 15px 20px;
+}
+
+.trip-table-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-table-section th,
+.trip-table-section td {
+    border: 1px solid var(--border-color);
+    padding: 12px;
+    text-align: center;
+}
+
+.trip-table-section th {
+    background-color: var(--accent-secondary);
+    color: var(--text-light);
+}
+
+.trip-table-section tr:nth-child(even) {
+    background-color: var(--primary);
 }
